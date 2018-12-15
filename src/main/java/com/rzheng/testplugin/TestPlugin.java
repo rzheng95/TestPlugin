@@ -8,6 +8,7 @@ public class TestPlugin extends JavaPlugin
 	public void onEnable() 
 	{
 		this.getLogger().info("My Plugin is Starting!");
+		this.getCommand("hellob0ss").setExecutor(new TestCommand());
 	}
 	
 	@Override

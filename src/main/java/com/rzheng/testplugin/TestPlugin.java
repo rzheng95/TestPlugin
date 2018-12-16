@@ -9,6 +9,7 @@ public class TestPlugin extends JavaPlugin
 	{
 		this.getLogger().info("My Plugin is Starting!");
 		this.getCommand("hellob0ss").setExecutor(new TestCommand());
+		this.getServer().getPluginManager().registerEvents(new TestListener(), this);
 	}
 	
 	@Override
